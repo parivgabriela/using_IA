@@ -1,0 +1,9 @@
+Yolov5:
+    - git clone https://github.com/ultralytics/yolov5
+    - # cd yolov5 (the program will change the current path)
+    - pip install -qr requirements.txt # be sure run the previous command in your notebook
+    - pip install -q roboflow
+
+Detect:
+pip install -r https://raw.githubusercontent.com/ultralytics/yolov5/master/requirements.txt
+
