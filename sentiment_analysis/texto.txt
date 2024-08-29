@@ -1,0 +1,4 @@
+I like python.
+I don't like python.
+I love flowers.
+I do not love flowers.
