@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <title>Text analysis</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Text</h1>
+        <form action="/" method="POST">
+            <p type="text" name="user_text"> {{ text }} </p>
+            {% if result %}
+                <div class="message">{{ result }}</div>
+            {% endif %}
+            <br>
+            <input type="submit" value="Try again">
+        </form>
+    </div>
+</body>
+</html>
