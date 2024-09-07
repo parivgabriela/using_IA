@@ -27,7 +27,7 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
-input[type="submit"] {
+.button_stl {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -38,7 +38,7 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+.button_stl:hover {
     background-color: #3700b3;
 }
 

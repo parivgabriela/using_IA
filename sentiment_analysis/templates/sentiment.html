@@ -9,12 +9,17 @@
 <body>
     
     <div class="container">
-        <h1 class="title">Sentiment analysis</h1>        
+        <h1 class="title">Sentiment analysis</h1>
+        
         <form action="/sentiment_analysis" method="POST">
-            {% for key, emoji_lang in languages.items() %}
-                <button  type="submit" class="button_stl" name="languages" value="{{ key }}">{{ emoji_lang }}</button>
-            {% endfor %}
+            <input type="text" name="user_text" placeholder="{{ user_input }}" required>
+            <br>
+            <input class="button_stl" type="submit" value="Analyze">
         </form>
+
+        {% if result %}
+            <div class="message">{{ result }}</div>
+        {% endif %}
     </div>
 </body>
 </html>
