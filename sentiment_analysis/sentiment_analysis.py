@@ -1,5 +1,7 @@
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
+from transformers import pipeline
+
 from constants import green_circle, blue_circle, yellow_circle 
 nltk.download('vader_lexicon')
 
@@ -19,3 +21,11 @@ def analysis_sentence(sentence):
     elif result['pos'] > 0.5:
         return f"Positive {green_circle}"
 
+
+
+classifier = pipeline('sentiment-analysis', 
+                      model="nlptown/bert-base-multilingual-uncased-sentiment")
+
+def analyze_spanish(sentence):
+    result = classifier(sentence)
+    return f"polaridad: {result['label']}, score: {round(result['score'], 4)}"
