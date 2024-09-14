@@ -27,5 +27,5 @@ classifier = pipeline('sentiment-analysis',
                       model="nlptown/bert-base-multilingual-uncased-sentiment")
 
 def analyze_spanish(sentence):
-    result = classifier(sentence)
+    result = classifier(sentence)[0]
     return f"polaridad: {result['label']}, score: {round(result['score'], 4)}"

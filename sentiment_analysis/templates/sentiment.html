@@ -10,8 +10,8 @@
     
     <div class="container">
         <h1 class="title">Sentiment analysis</h1>
-        
-        <form action="/sentiment_analysis" method="POST">
+        <form action="/analysis_result" method="POST">
+            <input type="text" name="language" value="{{ language }}" placeholder="{{ language }}">
             <input type="text" name="user_text" placeholder="{{ user_input }}" required>
             <br>
             <input class="button_stl" type="submit" value="Analyze">
