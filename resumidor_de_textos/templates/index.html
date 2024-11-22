@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Summarizer</h1>
+        <form action="/resumidor" method="POST">
+            <textarea name="inputText" placeholder="Enter your long text here..." rows="10"></textarea>
+            <button id="summarizeButton">Summarize</button>
+        </form>
+        <h2>Summary:</h2>
+        <div id="outputSummary">{{ nuevo_texto }}</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
