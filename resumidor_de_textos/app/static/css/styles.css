@@ -1,0 +1,100 @@
+/* Dark Mode Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #00ff99;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-container, .output-container {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #aaaaaa;
+}
+
+.file-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #00ff99;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-upload input {
+    display: none;
+}
+
+
+button:hover {
+    background-color: #7e46cc;
+}
+
+.output-container h2 {
+    color: #00ff99;
+}
+
+.summary-item {
+    background-color: #333333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1f1f1f;
+    color: #aaaaaa;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
