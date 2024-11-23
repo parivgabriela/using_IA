@@ -37,7 +37,7 @@ def resumir_texto(texto):
     sort_idx = np.argsort(-scores)
     print("Resumen:")
     oraciones = []
-    for i in range(min(15, len(sort_idx))):  # Limita el rango a la cantidad de oraciones disponibles
+    for i in range(min(15, int(len(sort_idx)/2 ) + 1)):  # Limita el rango a la cantidad de oraciones disponibles
         oraciones.append([sort_idx[i], scores[sort_idx[i]], lineas[sort_idx[i]]])
         print(f"{i}: score {scores[sort_idx[i]]}: {lineas[sort_idx[i]]}")
     
